@@ -1,0 +1,24 @@
+.bock-img-subject {
+  background-color: #FCFFDF;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  padding: 16px;
+  width: 260px;
+}
+
+.img-subject {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  margin-top: 50px;
+}
+
+.subject-title {
+  font-size: 32px;
+  color: #041F60;
+  line-height: 1.38860533em;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: unset;
+  display: block;
+}

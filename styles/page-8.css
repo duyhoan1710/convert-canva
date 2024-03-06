@@ -1,0 +1,23 @@
+.page-title {
+  font-size: 24px;
+  color: #040606;
+  font-weight: 700;
+}
+
+.question-type {
+  border-left: 2px solid #589C5F;
+  padding-left: 16px;
+  color: #041f60;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.question {
+  font-size: 25px;
+  background-color: #B7F2BA;
+  border-radius: 8px;
+  padding: 8px;
+  color: #041f60;
+  width: fit-content;
+  margin-bottom: 20px;
+}
