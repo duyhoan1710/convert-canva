@@ -1,0 +1,18 @@
+.menu-item {
+  background-color: #B7F2BA;
+  color: #D0462F;
+  padding: 10px 0 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.menu-item-right {
+  background-color: #B7F2BA;
+  padding: 10px 0 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}

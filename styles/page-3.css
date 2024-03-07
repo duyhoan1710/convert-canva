@@ -1,0 +1,13 @@
+.card-left {
+  border-radius: 20px;
+  background-color: #FCFFDF;
+  color: #1D0061;
+  padding: 40px;
+}
+
+.card-right {
+  border-radius: 20px;
+  background-color: #FCFFDF;
+  color: #1D0061;
+  padding: 20px
+}
