@@ -1,0 +1,29 @@
+.flashcard {
+  background-color: #FCFFDF;
+  border-radius: 16px;
+  border: 10px solid #000;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.flashcard-title {
+  font-size: 57px;
+  color: #041F60;
+  line-height: 1.38860533em;
+  text-align: center;
+}
+
+.flashcard-description {
+  font-size: 28px;
+  line-height: 1.37110403em;
+  text-align: center;
+  color: #041F60;
+}
+
+@media screen and (max-width: 768px) {
+  .model-content-custom {
+    font-size: 16px !important;
+  }
+}

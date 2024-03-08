@@ -15,146 +15,54 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/page-6.css" />
   </head>
-  <body class="bg-green">
-    <div class="container">
-      <h1 class="title">Thẻ Flashcard</h1>
-
+  <body class="bg-yellow">
+    <div
+      class="container position-relative d-flex flex-column justify-content-center align-items-center"
+    >
       <div
-        style="
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: repeat(9, auto);
-          column-gap: 48px;
-        "
+        class="fs-2 text-center position-absolute d-lg-block d-none"
+        style="font-weight: 700; color: #041f60; top: 40px; left: 40px"
       >
-        <div class="col flashcard" style="grid-row-start: 1; grid-row-end: 5">
-          <img
-            style="margin-left: calc(100% - 80px)"
-            src="./assets/loudspeaker.png"
-            alt=""
-          />
+        Giao diện Audio & <br />
+        ​Câu chuyện nguồn ​gốc
+      </div>
+      <img
+        src="./assets-2/loudspeaker.png"
+        alt=""
+        style="width: 300px; height: 200px"
+      />
 
-          <div class="mb-5 mt-4">
-            <div class="flashcard-title">知足常乐</div>
-            <div class="flashcard-description">zhī zú cháng lè</div>
-          </div>
+      <h1
+        class="page-title"
+        style="margin-bottom: 40px; color: #041f60; font-size: 88px"
+        ;
+      >
+        勤能补拙
+      </h1>
 
-          <div class="d-flex justify-content-between">
-            <img
-              style="transform: rotate(180deg)"
-              src="./assets/arrow-right.png"
-              alt=""
-            />
-            <img class="icon-home-small" src="./assets/home-icon.webp" alt="" />
-            <img src="./assets/arrow-right.png" alt="" />
-          </div>
-        </div>
-
-        <div
-          class="col flashcard d-flex flex-column justify-content-end"
-          style="grid-row-start: 4; grid-row-end: 9; grid-column-start: 2"
-        >
-          <div class="mb-5 mt-5">
-            <div class="flashcard-description">nghĩa tiếng trung</div>
-            <div class="flashcard-description">作宾语，定语</div>
-            <div class="flashcard-description">câu ví dụ</div>
-          </div>
-
-          <div class="d-flex justify-content-between">
-            <img
-              style="transform: rotate(180deg)"
-              src="./assets/arrow-right.png"
-              alt=""
-            />
-            <img src="./assets/wrong.png" alt="" />
-            <img class="icon-home-small" src="./assets/home-icon.webp" alt="" />
-            <img src="./assets/correct.png" alt="" />
-            <img src="./assets/arrow-right.png" alt="" />
-          </div>
-        </div>
+      <div class="page-content text-center" style="font-size: 42px">
+        公元825年，唐敬宗将杭州刺史白居易调任苏州刺史，苏州是唐​东南地区最大的州，地方事务繁杂。白居易上任谢绝所有的宴​请，一心处理政务，很快就熟悉当地的情况，整顿吏治，赢得老​百姓的好评。他认为自己生来笨拙只有靠勤奋来弥补。
       </div>
 
       <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
+        class="d-flex justify-content-between align-items-center mt-4"
+        style="width: 80%"
       >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body text-left p-5" style="border-radius: 60px">
-              <div
-                style="font-weight: 700; color: #d0462f"
-                class="fs-2 mb-3 text-center"
-              >
-                HƯỚNG DẪN
-              </div>
-
-              <div class="fs-3">
-                <div>
-                  <span style="text-decoration: underline">B1</span>
-                  <span>Click chuột vào</span>
-                  <span
-                    ><img
-                      src="./assets-2//loudspeaker.png"
-                      alt=""
-                      style="width: 50px; height: 30px"
-                  /></span>
-                  <span>để nghe </span>
-                  <span>audio</span>
-                  <span>cách đọc. </span>
-                </div>
-
-                <div>
-                  <span style="text-decoration: underline">B2</span>
-                  <span>Click chuột vào thẻ để </span>
-                  <span>lật thẻ </span>
-                  <span>mặt sau.</span>
-                </div>
-
-                <div>
-                  <span style="text-decoration: underline">B3</span>
-                  <span>Click chuột vào</span>
-                  <span
-                    ><img
-                      src="./assets-2/check-circle.png"
-                      alt=""
-                      style="width: 100px; height: 50px"
-                  /></span>
-                  <span>để đánh dấu </span>
-                  <span>“ĐÃ THUỘC”,</span>
-                </div>
-
-                <div>
-                  <span>Click chuột vào</span>
-                  <span
-                    ><img
-                      src="./assets-2/wrong-circle.png"
-                      alt=""
-                      style="width: 100px; height: 50px"
-                  /></span>
-                  <span>để đánh dấu </span>
-                  <span>CHƯA THUỘC”,</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img
+          style="transform: rotate(180deg)"
+          src="./assets/arrow-right.png"
+          alt=""
+          class="img-arrow"
+        />
+        <img
+          src="./assets-2/home.png"
+          style="width: 200px; height: 100px"
+          alt=""
+        />
+        <img src="./assets/arrow-right.png" alt="" class="img-arrow" />
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <script src="./bootstrap/js/bootstrap.min.js" async defer></script>
-
-    <script>
-      window.onload = () => {
-        $("#exampleModal").modal("show");
-      };
-    </script>
   </body>
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page 6</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/page-4-5.css" />
+  </head>
+  <body class="bg-green">
+    <div class="container">
+      <h1 class="title">Thẻ Flashcard</h1>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(9, auto);
+          column-gap: 48px;
+        "
+        class="d-lg-grid d-block"
+      >
+        <div
+          class="col flashcard mb-5"
+          style="grid-row-start: 1; grid-row-end: 5"
+        >
+          <img
+            style="margin-left: calc(100% - 80px)"
+            src="./assets/loudspeaker.png"
+            alt=""
+          />
+
+          <div class="mb-5 mt-4">
+            <div class="flashcard-title">知足常乐</div>
+            <div class="flashcard-description">zhī zú cháng lè</div>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <img
+              style="transform: rotate(180deg)"
+              src="./assets/arrow-right.png"
+              alt=""
+            />
+            <img class="icon-home-small" src="./assets/home-icon.webp" alt="" />
+            <img src="./assets/arrow-right.png" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="col flashcard d-flex flex-column justify-content-end"
+          style="grid-row-start: 4; grid-row-end: 9; grid-column-start: 2"
+        >
+          <div class="mb-5 mt-5">
+            <div class="flashcard-description">nghĩa tiếng trung</div>
+            <div class="flashcard-description">作宾语，定语</div>
+            <div class="flashcard-description">câu ví dụ</div>
+          </div>
+
+          <div class="d-flex justify-content-between mx-100">
+            <img
+              style="width: 20%; transform: rotate(180deg)"
+              src="./assets/arrow-right.png"
+              alt=""
+            />
+            <img style="width: 20%" src="./assets/wrong.png" alt="" />
+            <img
+              style="width: 20%"
+              class="icon-home-small"
+              src="./assets/home-icon.webp"
+              alt=""
+            />
+            <img style="width: 20%" src="./assets/correct.png" alt="" />
+            <img style="width: 20%" src="./assets/arrow-right.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body text-left p-5" style="border-radius: 60px">
+              <div
+                style="font-weight: 700; color: #d0462f"
+                class="fs-2 mb-3 text-center"
+              >
+                HƯỚNG DẪN
+              </div>
+
+              <div class="fs-3 model-content-custom">
+                <div>
+                  <span style="text-decoration: underline">B1</span>
+                  <span>Click chuột vào</span>
+                  <span
+                    ><img
+                      src="./assets-2//loudspeaker.png"
+                      alt=""
+                      style="width: 50px; height: 30px"
+                  /></span>
+                  <span>để nghe </span>
+                  <span>audio</span>
+                  <span>cách đọc. </span>
+                </div>
+
+                <div>
+                  <span style="text-decoration: underline">B2</span>
+                  <span>Click chuột vào thẻ để </span>
+                  <span>lật thẻ </span>
+                  <span>mặt sau.</span>
+                </div>
+
+                <div>
+                  <span style="text-decoration: underline">B3</span>
+                  <span>Click chuột vào</span>
+                  <span
+                    ><img
+                      src="./assets-2/check-circle.png"
+                      alt=""
+                      style="width: 100px; height: 50px"
+                  /></span>
+                  <span>để đánh dấu </span>
+                  <span>“ĐÃ THUỘC”,</span>
+                </div>
+
+                <div>
+                  <span>Click chuột vào</span>
+                  <span
+                    ><img
+                      src="./assets-2/wrong-circle.png"
+                      alt=""
+                      style="width: 100px; height: 50px"
+                  /></span>
+                  <span>để đánh dấu </span>
+                  <span>CHƯA THUỘC”,</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap/js/bootstrap.min.js" async defer></script>
+
+    <script>
+      window.onload = () => {
+        $("#exampleModal").modal("show");
+      };
+    </script>
+  </body>
+</html>

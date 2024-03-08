@@ -1,23 +1,14 @@
-.flashcard {
-  background-color: #FCFFDF;
-  border-radius: 16px;
-  border: 10px solid #000;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-}
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 36px !important;
+  }
 
-.flashcard-title {
-  font-size: 57px;
-  color: #041F60;
-  line-height: 1.38860533em;
-  text-align: center;
-}
+  .page-content {
+    font-size: 20px !important;
+  }
 
-.flashcard-description {
-  font-size: 28px;
-  line-height: 1.37110403em;
-  text-align: center;
-  color: #041F60;
+  .img-arrow {
+    width: 80px !important;
+    height: 60px !important;
+  }
 }
