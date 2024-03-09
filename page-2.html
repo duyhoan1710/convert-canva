@@ -19,9 +19,18 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-4 px-4 py-5">
-          <div class="menu-item">Thành ngữ</div>
+          <div class="menu-item">
+            <select class="w-100" style="background-color: transparent; border: unset; outline: unset;">
+              <option>Thành ngữ</option>
+              <option>A</option>
+              <option>B</option>
+            </select>
+          </div>
           <div class="menu-item">Flashcard</div>
-          <div class="menu-item">Thanh tìm kiếm</div>
+          <div class="menu-item position-relative">
+            <input class="w-100 h-75 fs-4" placeholder="Thanh tìm kiếm" />
+            <img src="./assets-2/search.svg" class="position-absolute" style="right: 30px; top: 20px; width: 24px; height: 24px; cursor: pointer;"  alt="" />
+          </div>
         </div>
 
         <div class="col-12 col-md-8 px-4 border-start border-dark py-5">
@@ -189,7 +198,9 @@
         </div>
       </div>
 
-      <img class="icon-home-footer" src="./assets/home-icon.webp" alt="" />
+      <a href="/page-1.html">
+        <img class="icon-home-footer" src="./assets/home-icon.webp" alt="" />
+      </a>
     </div>
 
     <script src="./bootstrap/js/bootstrap.min.js" async defer></script>

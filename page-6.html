@@ -19,17 +19,11 @@
     <div
       class="container position-relative d-flex flex-column justify-content-center align-items-center"
     >
-      <div
-        class="fs-2 text-center position-absolute d-lg-block d-none"
-        style="font-weight: 700; color: #041f60; top: 40px; left: 40px"
-      >
-        Giao diện Audio & <br />
-        ​Câu chuyện nguồn ​gốc
-      </div>
       <img
         src="./assets-2/loudspeaker.png"
         alt=""
-        style="width: 300px; height: 200px"
+        style="width: 300px; height: 200px; cursor: pointer;"
+        id="loudspeaker"
       />
 
       <h1
@@ -61,8 +55,34 @@
         />
         <img src="./assets/arrow-right.png" alt="" class="img-arrow" />
       </div>
+
+      <div id="audio">
+
+      </div>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./bootstrap/js/bootstrap.min.js" async defer></script>
+    <script>
+      var sound      = document.createElement('audio');
+      sound.id       = 'audio-player';
+      sound.controls = 'controls';
+      sound.src      = './assets-2/file_example_MP3.mp3';
+      sound.type     = 'audio/mpeg';
+    
+      document.body.appendChild(sound);
+
+      $("#loudspeaker" ).on( "click", function() {
+        if (sound.paused) {
+          sound.play();
+        } else {
+          sound.pause();
+        }
+      });
+    </script>
   </body>
 </html>
