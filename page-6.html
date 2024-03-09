@@ -39,8 +39,7 @@
       </div>
 
       <div
-        class="d-flex justify-content-between align-items-center mt-4"
-        style="width: 80%"
+        class="d-flex justify-content-between align-items-center mt-4 w-100 px-md-5"
       >
         <img
           style="transform: rotate(180deg)"
@@ -56,7 +55,7 @@
         <img src="./assets/arrow-right.png" alt="" class="img-arrow" />
       </div>
 
-      <div id="audio">
+      <div id="audio" style="visibility: hidden;">
 
       </div>
     </div>
@@ -74,7 +73,7 @@
       sound.src      = './assets-2/file_example_MP3.mp3';
       sound.type     = 'audio/mpeg';
     
-      document.body.appendChild(sound);
+      document.getElementById('audio').appendChild(sound);
 
       $("#loudspeaker" ).on( "click", function() {
         if (sound.paused) {

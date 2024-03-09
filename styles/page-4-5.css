@@ -6,6 +6,8 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
+  width: 50%;
+  cursor: pointer;
 }
 
 .flashcard-title {
@@ -25,5 +27,23 @@
 @media screen and (max-width: 768px) {
   .model-content-custom {
     font-size: 16px !important;
+  }
+
+  .flashcard {
+    width: 100%;
+  }
+}
+
+.move {
+  animation: rotate-flashcard 2s;
+}
+
+@keyframes rotate-flashcard {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(180deg);
   }
 }
