@@ -41,9 +41,11 @@
 @keyframes rotate-flashcard {
   from {
     transform: rotateY(0deg);
+    opacity: 1;
   }
 
   to {
     transform: rotateY(180deg);
+    opacity: 0;
   }
 }
